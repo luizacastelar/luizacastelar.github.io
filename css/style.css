@@ -1,0 +1,299 @@
+body{
+	font: 15px/1.5 Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	margin: 0;
+	position: relative;
+  	min-height: 100vh;
+  	padding-bottom: 10px;
+}
+
+.container {
+	width: 80%;
+	margin:auto;
+}
+
+h1, h3, h5, ul{
+	margin: 0px;
+}
+
+aside{
+	width: 30%;
+	background-color: #35424a;
+	color: white;
+	padding: 10px;
+}
+
+.button{
+	background: #ffa520;
+	color: white;
+	padding: 14px;
+	border: none; 
+	cursor: pointer;
+}
+
+
+/************  HEADER ******************/
+
+header{
+	background-color: #35424a;
+	color: white;
+	min-height: 80px;
+	border-bottom: orange 2px solid;
+	padding: 10px;
+}
+
+header a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+nav{
+	margin-top: 20px;
+	float: right;
+}
+
+header li{
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+
+header .orange, .current a{
+	color: orange;
+}
+
+header a:hover{
+	color: orange;
+	font-weight: bold;
+}
+
+header h1{
+	margin-top: 10px;
+	float: left;
+}
+
+
+/************  PRESENTATION ******************/
+
+#presentation{
+	padding-top: 10px;
+	min-height: 300px;
+
+	background-image: url('../img/imagemFundo1.jpg');
+	background-repeat: no-repeat;
+	background-position: 0px -450px; 
+
+	background-color: #fff;
+  	background-blend-mode: luminosity;
+}
+
+#presentation .container{
+	text-align: center;
+	color: white;
+	width: 60%;
+}
+
+#presentation h1{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	font-size: 40px;
+}
+
+#presentation h3{
+	line-height: 2;
+}
+
+
+/************  NEWSLETTER ******************/
+
+#subscribe-newsletter{
+	background-color: #35424a;
+	color: white;	
+	min-height: 80px;
+}
+
+#subscribe-newsletter form{
+	float: right;
+	padding: 15px;
+}
+
+#subscribe-newsletter h3{
+	float: left;
+	margin: 20px 0 20px 0;
+}
+
+#subscribe-newsletter input[type='email']{
+	padding: 10px;
+	width: 250px;
+	height: 20px;
+	margin-right:10px; 
+}
+
+/************  BOXES ******************/
+
+#content{
+	margin:30px 0 0px 0;
+	min-height: 200px;
+	padding-bottom: 6.5em;
+}
+
+#content .container{
+	display: flex;
+	text-align: center;
+}
+
+#content img{
+	width:100px;
+	height: 100px;
+}
+
+#content .box{
+	padding: 0 30px;
+}
+
+/************ ABOUT US ******************/
+
+#about-us {
+	margin: 30px 0 30px 0;
+}
+
+#about-us .container, #services .container{
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 2.5em;
+}
+
+#about-us article, #services section{
+	width: 60%;
+}
+
+/************ SERVICES ******************/
+
+#services{
+	margin-top: 30px;
+}
+
+#services ul{
+	padding: 20px 0; 
+}
+
+#services ul li{
+	border: solid #9e9e9e63 1px;
+	background-color: #9e9e9e2e;
+	margin: 10px 0;
+	list-style: none;
+	padding: 0 20px; 
+}
+
+#services aside{
+	max-height: 400px;
+}
+
+#services aside h3{
+	margin: 10px 0;
+}
+
+#services input, textarea{
+	width: 90%;
+	padding: 10px;
+}
+
+#services textarea{
+	resize: none; 
+	height: 100px;
+}
+
+#services .get-quote-inputs{
+	margin: 10px 0;
+}
+
+/************ FOOTER ******************/
+
+footer{
+	background-color: orange;
+	text-align: center;
+	color:white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 2.5rem;
+	padding-top: 10px;
+}
+
+
+
+/************ MEDIA QUERY **************/
+@media(min-width: 1500px){
+	#presentation{
+		background-image: url('../img/imagemFundo2.jpg');
+		background-position: 0px -300px;
+	}
+}
+
+
+@media(max-width: 800px){
+
+	header h1, header nav, #subscribe-newsletter h3, #subscribe-newsletter form{
+		text-align: center !important;
+		float:none !important;
+	}
+
+	ul{
+		padding: 0px;
+	}
+
+	li{
+		padding: 0px 10px !important;
+	}
+
+	#presentation{
+		background-position: 0px -300px;
+	}
+
+	#presentation .container{
+		width: 90%;
+	}
+
+	#presentation h3{
+		padding-bottom: 10px;
+	}
+
+	#subscribe-newsletter h3{
+		padding: 20px 0 0 0; 
+		margin-top: 0px;
+	}
+
+	#about-us .container, #services .container, #content .container{
+		display: block;
+	}
+
+	#about-us article, #about-us aside, #services section, #services aside{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#services aside{
+		text-align: center;
+	}
+
+	#services form button{
+		width: 20%;
+	}
+}
+
+@media(max-width: 576px){
+
+	#subscribe-newsletter form input {
+		width: 100%  !important;
+		box-sizing: border-box;
+		height: 40px !important;
+	}
+
+	#subscribe-newsletter form button, #services form button{
+		width: 100%  !important;
+		margin: 10px 0px;
+	}
+
+}

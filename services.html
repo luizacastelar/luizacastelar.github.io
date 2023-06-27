@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>ACME | SERVICES</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="keywords" content="web design, exemplo, layout"/>
+        <meta name="authors" content="luiza rodrigues"/>
+        <meta name="description" content="template para treino de criação de website"/>
+        <link rel="stylesheet" href="./css/style.css"/> 
+	</head>
+
+	<body>
+        <header>
+          <div class="container">
+            <h1> <span class='orange'>Acme</span> Web Design</h1>
+
+            <nav>
+              <ul>
+                  <li><a href="index.html">home</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li class="current"><a href="services.html">services</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <main>
+          <section id="subscribe-newsletter">
+            <div class="container">
+              <h3> Subscribe to our newsletter</h3>
+
+              <form action="subscribe.php">
+                <input type="email" placeholder="Enter email ..."/>
+                <button class="button" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </section>
+
+
+        <div id="services">
+          <div class="container">
+            <section>
+              <h3> Services </h3>
+
+              <ul>
+                <li>
+                  <h4>Website Design</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                  <p> Pricing <b>$1,000 - $3,000</b> </p>
+                </li>
+
+                <li>
+                  <h4>Website Maintenance</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                  <p> Pricing <b>$250 per month</b> </p>
+                </li>
+
+                <li>
+                  <h4>Website Hosting</h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                  <p> Pricing <b>$25 per month</b> </p>
+                </li>
+              </ul>
+            </section>
+
+            <aside>
+              <h3>Get a Quote</h3>
+
+              <form action="">
+                <div class="get-quote-inputs">
+                  <label for='name'>Name</label> <br>
+                  <input type="text" name="name" id='name' placeholder="Name...">
+                </div>
+
+                <div class="get-quote-inputs">
+                  <label for='email'>Email</label> <br>
+                  <input type="email" name="email" id='email' placeholder="Email address...">
+                </div>
+
+                <div class="get-quote-inputs">
+                  <label for='message'>Message</label> <br>
+                  <textarea id='message' name='message' placeholder="Message..."></textarea>
+                </div>
+
+                <button class="button" type="submit">Send</button>
+              </form>
+            </aside>
+
+          </div>
+        </div>
+
+          <footer>
+            <h5> Acme Web Design, Copyright @ 2019</h5>
+          </footer>
+        </main>
+
+	</body>
+</html>
